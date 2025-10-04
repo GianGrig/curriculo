@@ -2,7 +2,8 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Minha Página Pessoal</title>
+    <title>Currículo | Gianluca Grignani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,60 +11,79 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <img src="Minha_foto.jpg" alt="Foto de Gianluca Grignani" width="100" />
-      <h1>Gianluca Grignani</h1>
-
-      <nav>
-        <a href="#objetivos">Objetivos</a> 
-        <a href="#formacao">Formação</a> 
-        <a href="#habilidades">Habilidades</a> 
-        <a href="#cursos">Cursos</a> 
-        <a href="#idiomas">Idiomas</a>
-      </nav>
-
-      <p>
-        <i class="fa-solid fa-phone"></i> (47) 99985-3436 |
-        <a href="https://www.linkedin.com/in/gianluca-grignani-a30b64264/"
-          ><i class="fa-brands fa-linkedin"></i> Gianluca Grignani</a
-        >
-        |
-        <a href="https://github.com/GianGrig"
-          ><i class="fa-brands fa-github"></i> GianGrig</a
-        >
-        | <i class="fa-solid fa-envelope"></i> grignanigian14@gmail.com
-      </p>
+      <div class="header-container">
+        <a href="#" class="logo">Gianluca Grignani</a>
+        <nav>
+          <a href="#objetivos">Objetivos</a>
+          <a href="#formacao">Formação</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#cursos">Cursos</a>
+          <a href="#idiomas">Idiomas</a>
+        </nav>
+      </div>
     </header>
 
     <main>
       <div id="container">
+        <section id="apresentacao">
+          <img src="Minha_foto.jpg" alt="Foto de Gianluca Grignani" />
+          <div class="apresentacao-texto">
+            <h1>Desenvolvedor Java em Formação</h1>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/gianluca-grignani-a30b64264/"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+              >
+              <a
+                href="https://github.com/GianGrig"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i> GitHub</a
+              >
+              <a href="mailto:grignanigian14@gmail.com" aria-label="Email"
+                ><i class="fa-solid fa-envelope"></i> Email</a
+              >
+              <a href="tel:+5547999853436" aria-label="Telefone"
+                ><i class="fa-solid fa-phone"></i> (47) 99985-3436</a
+              >
+            </div>
+          </div>
+        </section>
+
         <section id="objetivos">
-          <h2>OBJETIVOS PROFISSIONAIS</h2>
+          <h2><i class="fa-solid fa-bullseye"></i> OBJETIVOS PROFISSIONAIS</h2>
           <p>
-            Busco uma oportunidade como desenvolvedor júnior ou estagiário para
-            aplicar meus sólidos conhecimentos no ecossistema Java. Tenho
-            experiência prática no desenvolvimento de aplicações web com Spring
-            Boot, Spring MVC e Spring Security, construindo APIs e realizando a
-            integração com bancos de dados SQL. Desejo contribuir para projetos
-            desafiadores e crescer junto com a empresa.
+            Estudante do curso Técnico em Desenvolvimento de Sistemas em busca
+            da minha primeira oportunidade como
+            <strong>Desenvolvedor Júnior ou Estagiário</strong>. Durante minha
+            formação, desenvolvi
+            <strong>projetos acadêmicos e pessoais</strong> que me deram
+            conhecimento prático no ecossistema Java, incluindo a construção de
+            aplicações web com Spring Boot, a criação de APIs e a integração com
+            bancos de dados (MySQL). Sou proativo, dedicado ao aprendizado
+            contínuo e estou entusiasmado para aplicar minhas habilidades em um
+            ambiente profissional, contribuindo para projetos desafiadores e
+            crescendo junto com a equipe.
           </p>
         </section>
 
         <section id="formacao">
-          <h2>FORMAÇÃO</h2>
+          <h2><i class="fa-solid fa-graduation-cap"></i> FORMAÇÃO</h2>
           <ul>
             <li>
               <strong>Técnico em Desenvolvimento de Sistemas</strong> - Senai
-              (FEV/2024 | DEZ/2025 )
+              (FEV/2024 – DEZ/2025)
             </li>
             <li>
               <strong>Ensino Médio Completo</strong> - EEB Adolpho Konder
@@ -73,93 +93,189 @@
         </section>
 
         <section id="habilidades">
-          <h2>HABILIDADES COMPORTAMENTAIS</h2>
-          <ul>
-            <li>Motivação para o aprendizado e desenvolvimento constantes.</li>
-            <li>Boa comunicação com a equipe.</li>
-            <li>Trabalho em equipe para realizar projetos em conjunto.</li>
-            <li>Iniciativa para buscar aprimoramento constante.</li>
-          </ul>
+          <h2><i class="fa-solid fa-laptop-code"></i> HABILIDADES</h2>
+          <div class="habilidades-container">
+            <div class="habilidade-coluna">
+              <h3>Técnicas</h3>
+              <ul>
+                <li>
+                  <strong>Java & Spring Ecosystem:</strong> POO, Collections,
+                  Streams, Spring Boot, Spring Security.
+                </li>
+                <li>
+                  <strong>Banco de Dados:</strong> Modelagem relacional (MySQL),
+                  queries SQL, JDBC.
+                </li>
+                <li>
+                  <strong>Ferramentas:</strong> Maven, Git & GitHub, MySQL
+                  Workbench.
+                </li>
+                <li>
+                  <strong>Front-End:</strong> HTML5 (semântico), CSS3 (Flexbox).
+                </li>
+                <li>
+                  <strong>C# (Fundamentos):</strong> Base sólida em POO e
+                  sintaxe da linguagem.
+                </li>
+              </ul>
+            </div>
+            <div class="habilidade-coluna">
+              <h3>Comportamentais</h3>
+              <ul>
+                <li>Motivação para aprendizado contínuo</li>
+                <li>Comunicação e trabalho em equipe</li>
+                <li>Iniciativa e proatividade</li>
+                <li>Resolução de problemas</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-          <h2>HABILIDADES TÉCNICAS</h2>
-          <ul>
-            <li>
-              <strong>Java (Intermediário):</strong> Programação Orientada a
-              Objetos (POO), manipulação de Collections e Streams (Java 8+),
-              desenvolvimento de aplicações com o ecossistema Spring.
-            </li>
-            <li>
-              <strong>Spring Security (Intermediário):</strong> Implementação de
-              autenticação e autorização, controle de acesso baseado em perfis
-              (Roles), configuração de rotas protegidas, criptografia de senhas
-              com BCrypt.
-            </li>
-            <li>
-              <strong>Spring Boot (Intermediário):</strong> Configuração de
-              projetos, injeção de dependências, desenvolvimento de aplicações
-              web e lógicas de backend, criação de controllers.
-            </li>
-            <li>
-              <strong>Banco de Dados (Intermediário):</strong> Modelagem e
-              desenho de schema relacional (MySQL), criação de queries SQL
-              (CRUD, Funções de Agregação), integração de aplicações Java com
-              banco de dados via JDBC, uso de ferramentas (MySQL Workbench).
-            </li>
-            <li>
-              <strong>Maven (Intermediário):</strong> Gerenciamento de
-              dependências do projeto, configuração do pom.xml, build e
-              empacotamento de aplicações.
-            </li>
-            <li>
-              <strong>C# (Fundamentos):</strong> Sólida base teórica em
-              Programação Orientada a Objetos (Herança, Polimorfismo,
-              Encapsulamento), estruturas de controle (condicionais e laços),
-              manipulação de coleções (List, Dictionary, Arrays) e sintaxe da
-              linguagem.
-            </li>
-            <li>
-              <strong>Git e GitHub (Intermediário):</strong> Controle de versão
-              de projetos, comandos essenciais (commit, push, pull), hospedagem
-              e compartilhamento de repositórios.
-            </li>
-            <li>
-              <strong>HTML5 (intermediário):</strong> estrutura semântica,
-              formulários, tabelas, navegação, projetos práticos.
-            </li>
-            <li>
-              <strong>CSS3 (básico):</strong> estilização, layout com flexbox,
-              Google Fonts, icones.
-            </li>
-          </ul>
+        <section id="projetos">
+          <h2><i class="fa-solid fa-diagram-project"></i> PROJETOS</h2>
+
+          <div class="projeto">
+            <h3>Sistema de Controle de EPIs</h3>
+            <p>
+              Aplicação web full-stack para gerenciamento do ciclo de vida de
+              EPIs em uma construtora, com controle de estoque, empréstimos e
+              relatórios.
+            </p>
+            <p class="tecnologias">
+              <strong>Tecnologias:</strong> Java, Spring Boot, Spring Security,
+              Thymeleaf, MySQL.
+            </p>
+            <div class="projeto-links">
+              <a
+                href="https://github.com/GianGrig/sistema-gestao-epis-vfinal"
+                class="btn ghost"
+                target="_blank"
+                >Ver Código</a
+              >
+            </div>
+          </div>
+
+          <div class="projeto">
+            <h3>Portfólio Interativo</h3>
+            <p>
+              Portfólio single-page com design responsivo, temas claro/escuro,
+              navegação dinâmica e galerias de imagem interativas para exibição
+              de projetos.
+            </p>
+            <p class="tecnologias">
+              <strong>Tecnologias:</strong> HTML5, CSS3 (Flexbox, Variáveis),
+              JavaScript (ES6+).
+            </p>
+            <div class="projeto-links">
+              <a
+                href="https://giangrig.github.io/portfolio/"
+                class="btn"
+                target="_blank"
+                >Ver Projeto</a
+              >
+              <a
+                href="https://github.com/GianGrig/portfolio"
+                class="btn ghost"
+                target="_blank"
+                >Ver Código</a
+              >
+            </div>
+          </div>
+
+          <div class="projeto">
+            <h3>Traqair E-commerce</h3>
+            <p>
+              E-commerce responsivo de uma loja de tênis, desenvolvido para
+              aplicar conceitos avançados de front-end com Bootstrap, incluindo
+              catálogo, páginas de detalhe e área de login.
+            </p>
+            <p class="tecnologias">
+              <strong>Tecnologias:</strong> HTML, CSS, JavaScript, Bootstrap 5.
+            </p>
+            <div class="projeto-links">
+              <a
+                href="https://github.com/PauloVieira47/Site-Estatico-Traqair"
+                class="btn ghost"
+                target="_blank"
+                >Ver Código</a
+              >
+            </div>
+          </div>
+
+          <div class="projeto">
+            <h3>Mamma Mia Pizzas</h3>
+            <p>
+              Website de uma pizzaria fictícia criado para praticar e aprofundar
+              conceitos de HTML5 e CSS3, com foco em design responsivo, layout e
+              usabilidade.
+            </p>
+            <p class="tecnologias">
+              <strong>Tecnologias:</strong> HTML5, CSS3, Design Responsivo.
+            </p>
+            <div class="projeto-links">
+              <a
+                href="https://giangrig.github.io/projetos-html/pizzaria/"
+                class="btn"
+                target="_blank"
+                >Ver Projeto</a
+              >
+              <a
+                href="https://github.com/GianGrig/projetos-html"
+                class="btn ghost"
+                target="_blank"
+                >Ver Código</a
+              >
+            </div>
+          </div>
+
+          <div class="projeto">
+            <h3>IoT - Monitoramento de Temperatura</h3>
+            <p>
+              Solução IoT para monitorar em tempo real a temperatura e umidade
+              em estoques de alimentos, utilizando um microcontrolador ESP32 que
+              envia dados para um dashboard web.
+            </p>
+            <p class="tecnologias">
+              <strong>Tecnologias:</strong> ESP32, Sensor DHT, C++ (Arduino),
+              Dashboard Web.
+            </p>
+            <div class="projeto-links">
+              <a
+                href="https://github.com/valdemirJr79/Grupo6_Sensor_de_temperatura"
+                class="btn ghost"
+                target="_blank"
+                >Ver Código</a
+              >
+            </div>
+          </div>
         </section>
 
         <section id="cursos">
-          <h2>CURSOS</h2>
+          <h2><i class="fa-solid fa-book"></i> CURSOS</h2>
           <ul>
             <li>
               <strong>Desenvolvimento de Jogos 2D com C# e Unity</strong> -
-              (Udemy | 95h | 2022).
+              (Udemy | 95h | 2022)
             </li>
             <li>
               <strong
                 >Desenvolvimento de Jogos 3D com Multiplayer em Unity</strong
               >
-              - (Udemy | 85h | 2022).
+              - (Udemy | 85h | 2022)
             </li>
             <li>
               <strong>Desenvolvimento de RPG 2D Top-Down com Unity</strong> -
-              (Udemy | 24h | 2022).
+              (Udemy | 24h | 2022)
             </li>
           </ul>
         </section>
 
         <section id="idiomas">
-          <h2>IDIOMAS</h2>
+          <h2><i class="fa-solid fa-language"></i> IDIOMAS</h2>
           <ul>
-            <li><strong>Português:</strong> Nativo.</li>
+            <li><strong>Português:</strong> Nativo</li>
             <li>
-              <strong>Inglês:</strong> Básico (Em processo de aprimoramento para
-              maior proficiência).
+              <strong>Inglês:</strong> Básico (Em processo de aprimoramento)
             </li>
           </ul>
         </section>
